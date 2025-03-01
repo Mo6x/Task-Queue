@@ -1,0 +1,26 @@
+{
+  "name": "task-queue",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/mongoose": "^5.11.97",
+    "bullmq": "^5.41.7",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.4.7",
+    "express": "~4.16.1",
+    "ioredis": "^5.5.0",
+    "mongoose": "^8.11.0",
+    "morgan": "~1.9.1",
+    "nodemon": "^3.1.9",
+    "ts-jest": "^29.2.6"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
+}
