@@ -10,7 +10,6 @@ const worker = new Worker('taskQueue', async (job) => {
     task.status = 'processing';
     await task.save();
     
-    // Simulate task processing
     await new Promise((resolve) => setTimeout(resolve, 2000));
     
     task.status = 'completed';
