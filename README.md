@@ -104,14 +104,14 @@ npm run dev  # Runs with Nodemon for hot-reloading
 ```sh
 curl -X POST http://localhost:8080/api/tasks \
      -H "Content-Type: application/json" \
-     -d '{"data": {"message": "Process this task"}}'
+     -d '{ "email": "wuebsdwijeiqwa@gmail.com"}'
 ```
 
 Response:
 ```json
 {
   "message": "Task added to queue",
-  "taskId": "60bdfc4a1b2d1a3e4c8d9f72"
+  "taskId": "15"
 }
 ```
 
@@ -135,7 +135,7 @@ docker run -p 5000:5000 task-queue
 ```
 
 ### Using PM2 for Production
-Install PM2 globally and start the app:
+Install PM2 or Yarn globally and start the app:
 ```sh
 npm install -g pm2
 npm run build
